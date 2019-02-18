@@ -40,7 +40,7 @@ export default {
             <sup v-if="prop.required" :class="$style.required">*</sup>
           </td>
           <td>{{ prop.type }}</td>
-          <td>{{ prop.default }}</td>
+          <td>{{ JSON.stringify(prop.default) }}</td>
           <td>{{ prop.description }}</td>
         </tr>
       </tbody>
